@@ -15,10 +15,7 @@
         <br><br>
         <input type="button" value="submit" id="btn">
     </form> -->
-
-
-
-    <form action="">
+  <form action="">
         <label >Hobbies:</label>
         <label >Sports:</label>
         <input type="checkbox" name="hobbies" value="Sports">
@@ -28,14 +25,12 @@
         <input type="checkbox" name="hobbies" value="Reading">
          <label >Writting:</label>
         <input type="checkbox" name="hobbies" value="Writting">
-        
-        <br><br>
+         <br><br>
         <input type="button" value="submit" id="btn">
     </form>
     <br>
     <div id="OutputDiv">
-
-    </div>
+ </div>
     <script src="jquery.js"></script>
     <script>
         $(document).ready(function(){
@@ -47,14 +42,11 @@
             // }
             // else{
             //      $('#OutputDiv').html( "No Radio Button Checked...");
-
-            // }
-
-
+          // }
             var option = $('input[type="checkbox"]:checked');
             var string = option.length + "checkebox Checked <br/>";
-            if(option.length > 0)
-            {
+              if(option.length > 0)
+                {
                 option.each(function(){
                     string+= $(this).val() + "<br/>";
                 });
@@ -62,11 +54,8 @@
             }
             else
             {
-                
                 $('#OutputDiv').html( "No Radio Button Checked...");
-$
             }
-
             });
         });
     </script>
