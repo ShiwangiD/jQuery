@@ -19,41 +19,30 @@
       <p id="p2">This is paraGragh</p>
       <p id="p3">This is paraGragh</p>
     <br/>
-    <input type="button" value="wrap" id="btn1">
-    <input type="button" value="unWrap" id="btn2">
+     <input type="button" value="wrap" id="btn1">
+     <input type="button" value="unWrap" id="btn2">
      <input type="button" value="wrapAll " id="btn3">
      <input type="button" value="wrapInner " id="btn4">
-      <input type="button" value="Un wrapInner " id="btn5">
+     <input type="button" value="Un wrapInner " id="btn5">
      
     <script src="jquery.js"></script>
     <script>
         $(document).ready(function(){
             $("#btn1").click(function(){
                 $("p").wrap("<div id='div1'></div>");
-
             });
              $("#btn2").click(function(){
                 $("p").unwrap();
              });
-
-              $("#btn3").click(function(){
+             $("#btn3").click(function(){
                 $("p").wrapAll("<div id='div1'></div>");
-
-            });
-
+              });
              $("#btn4").click(function(){
                 $("#p1").wrapInner("<b><i></i></b>");
-
-            });
-
+             });
              $("#btn5").click(function(){
                 $("#p1 > b,i").contents().unwrap();
-
-            });
-
-
-        
-
+             });
         });
     </script> 
 </body>
